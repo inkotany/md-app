@@ -1,16 +1,37 @@
 :root {
-    --primary-color: rgb(7, 7, 124);
-    --white-color: white;
-    --background-color: #F6F5F2;
-    --font-famly: 'Open Sans', sans-serif; 
+  --primary-color: rgb(7, 7, 124);
+  --white-color: white;
+  --background-color: #f6f5f2;
+  --font-famly: "Open Sans", sans-serif;
 }
 
 html {
-    font-size: 16px;
+  font-size: 16px;
+}
+
+::selection {
+  background-color: var(--primary-color);
+  color: var(--white-color);
 }
 
 * {
-    margin: 0;
-    box-sizing: border-box;
-    font-family: var(--font-famly);
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-famly);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  opacity: 0.4;
 }
