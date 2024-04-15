@@ -28,3 +28,8 @@ thead {
     background-color: var(--primary-color);
     color: var(--white-color);
 }
+
+.table-container {
+    overflow-x: auto;
+    overflow-y: auto;
+}
