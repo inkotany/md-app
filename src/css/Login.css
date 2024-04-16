@@ -71,3 +71,7 @@
     align-items: center;
     background-color: var(--background-color);
 }
+
+.icon-white {
+    color: var(--white-color);
+}

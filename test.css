@@ -1,7 +1,7 @@
 :root {
     --primary-color: rgb(7, 7, 124);
     --white-color: white;
-    --background-color: #F6F5F2;
+    --background-color: #ececec;
     --font-famly: 'Open Sans', sans-serif; 
 }
 
@@ -16,6 +16,8 @@
   ::-webkit-scrollbar-thumb {
     background: var(--primary-color);
   }
+
+  
   
   ::-webkit-scrollbar-thumb:hover {
     opacity: 0.4;
@@ -36,4 +38,104 @@ html {
     font-family: var(--font-famly);
 }
 
+.container {
+    display: grid;
+    height: 99vh;
+    grid-template-rows: 8% 92%;
+    gap: 1px;
+    grid-template-columns: 240px auto;
+}
 
+
+.item.horizontal {
+    grid-column: span 2;
+}
+
+.sidebar {
+    display: flex;
+    width: 240px;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    top: 8%;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.sidebar ul > li {
+    flex-basis: 40px;
+    list-style-type: none;
+    text-align: left;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.3rem;
+}
+
+.sidebar ul > li:hover {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.icon {
+    padding-right: 15px;
+}
+
+.title {
+    padding-left: 10px;
+    font-size: 1.5rem;
+    padding-top: 20px;
+}
+
+.active {
+    border-right: 7px solid var(--primary-color);
+    background-color: rgb(123, 127, 191);
+}
+
+.horizontal {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+}
+
+.system-name {
+    color: var(--white-color);
+    font-size: 1.5rem;
+    padding: 10px;
+    font-weight: normal;
+}
+
+.profile {
+    position: absolute;
+    right: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile .profile-img {
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--white-color);
+    border-radius: 50%;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.username {
+    padding-left: 5px;
+    color: var(--white-color);
+    font-weight: normal;
+    font-size: 1.2rem;
+    text-align: center;
+}

@@ -31,7 +31,7 @@ function Login() {
       <h1 className="intro">{time < 12 ? 'Mwaramutse' : 'Mwiriwe'} neza<span> {formData.userName}!</span></h1>
 
       <div className="input-container">
-        <i className="fa fa-user-circle icon"></i>
+        <i className="bi bi-person icon"></i>
         <input
           type="text"
           className="input-field"
@@ -44,7 +44,7 @@ function Login() {
       </div>
 
       <div className="input-container">
-        <i className="fa fa-key icon"></i>
+        <i className="bi bi-key icon"></i>
         <input
           type="password"
           className="input-field"
@@ -56,7 +56,7 @@ function Login() {
         />
       </div>
 
-      <button onClick={handleClick} className="login-btn">Login</button>
+      <button onClick={handleClick} className="login-btn">Login <i className='bi bi-box-arrow-in-right icon-white'></i></button>
     </form>
   </div>
   )

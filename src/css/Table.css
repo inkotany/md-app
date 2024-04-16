@@ -15,10 +15,6 @@ td, th {
 }
 
 
-tbody > tr:nth-child(odd) {
-    background-color: var(--background-color);
-}
-
 tbody > tr:hover {
     background-color: var(--primary-color);
     color: var(--white-color);
